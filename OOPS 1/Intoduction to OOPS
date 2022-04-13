@@ -1,0 +1,41 @@
+package OOPs;
+
+public class Student{
+    String name;
+    int Standread;
+    int rollNo;
+}
+                                               //This is a template of Student which is in the form of Student class
+
+
+
+package OOPs;
+
+public class StudentUse {
+    public static void main(String[] args) {
+        Student s1 = new Student();             //s1 is Student class object which is having the address of Student class
+        s1.name = "Harsh Rajput";
+        s1.Standread = 12;
+        s1.rollNo = 43;
+
+        System.out.println(s1);
+        System.out.println(s1.name);
+        System.out.println(s1.rollNo);
+    }
+}
+                                             // There is no need to import the Student class because the both classes have the same package OOPs
+                                             
+                                             
+                                             //if they both have different Packages the we need to import the Student Class
+                                             //Example:
+                                             
+                                             
+package DemoPackage;
+import OOPs.Student;           // Here we are importing the Student Class which is have the OOPs package
+public class StudentUse {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        System.out.println(s1);
+    }
+}                                           
+                                             
